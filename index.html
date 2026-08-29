@@ -74,6 +74,25 @@
         .grid-content { padding: 1rem; }
         .grid-content h3 { margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #004d40; }
         .grid-content p { font-size: 0.9rem; color: #555; margin: 0; text-align: left; }
+
+        /* Video Container Styling */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-top: 1rem;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
         
         .contact-info p { text-align: left; margin-bottom: 0.4rem; }
         footer { text-align: center; padding: 2rem; color: #666; font-size: 0.9rem; border-top: 1px solid #e0e0e0; margin-top: 3rem; }
@@ -90,6 +109,7 @@
 
     <nav>
         <a href="#about">About</a>
+        <a href="#latest-activities">Latest Activities</a>
         <a href="#education">Education & Fellowships</a>
         <a href="#meetings">Meetings & Leadership</a>
         <a href="#awards">Honors & Awards</a>
@@ -109,6 +129,15 @@
                     <p>Central to his leadership legacy is his role in provincial policy formulation and health sector reform. Dr. Shaikh actively shapes, enacts, and aligns provincial health policies with national priorities and Sustainable Development Goals (SDGs). He spearheads strategic legislative proposals, regulatory frameworks, health equity initiatives, and operational guidelines that optimize healthcare access and strengthen system resiliency across urban and rural districts alike. In parallel, he provides comprehensive executive direction across all core vertical programs, including the Expanded Program on Immunization (EPI), Tuberculosis (TB) Control, Hepatitis Elimination, Reproductive, Maternal, Newborn, and Child Health (RMNCH/MNCH), Communicable Disease Control (CDC), Health Education, Non-Communicable Diseases (NCDs), and overall Procurement, Admin & Accounts (PA&A).</p>
                     <p>Dr. Shaikh commands a vast executive workforce comprising Deputy Directors General, Divisional Directors, District Health Officers (DHOs), and Medical Superintendents (MSs). In this capacity, he directs human resource planning, province-wide capacity building, continuous professional training, and high-level talent selection via executive scrutiny committees while managing multi-million-dollar public health portfolios with rigorous financial governance, he also drives strategic international donor collaborations, spearheads Integrated Disease Surveillance and Response (IDSR) rollouts and leads high-stakes emergency and epidemic responses to fortify public health defense mechanisms throughout the province.</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- Latest Activities Section with Embedded Video -->
+        <section id="latest-activities" class="card">
+            <h2>Latest Activities</h2>
+            <p>Highlights and coverage of recent public health initiatives, strategic briefings, and official engagements.</p>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/pGpcGjykn4?si=goV_dHSBNBI41zzw" title="Dr. Parvez Ahmed Shaikh - Latest Activities" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
 
@@ -300,7 +329,7 @@
             <div class="grid-container">
                 <div class="grid-item">
                     <div class="grid-content">
-                       </div>
+                    </div>
                 </div>
             </div>
         </section>
